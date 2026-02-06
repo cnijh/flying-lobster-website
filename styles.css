@@ -58,6 +58,8 @@ body {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-header {
@@ -399,9 +401,9 @@ body {
 
 .demo-stage {
     position: relative;
-    width: calc(100% + 200px);
-    max-width: 1100px;
-    margin: 32px -100px;
+    width: 100%;
+    max-width: 900px;
+    margin: 32px auto;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -666,14 +668,30 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero {
+        min-height: auto;
+    }
+    
+    .hero-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .logo {
+        font-size: 40px;
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        padding: 0 8px;
     }
     
     .hero-centered {
@@ -681,43 +699,118 @@ body {
         padding-bottom: 40px;
     }
     
+    .install-section {
+        margin-top: 24px;
+        width: 100%;
+    }
+    
     .install-row {
         flex-direction: column;
         gap: 12px;
+        width: 100%;
     }
     
     .install-command {
         width: 100%;
-        max-width: 320px;
+        max-width: 100%;
+        padding: 12px 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    #install-code {
+        font-size: 0.85rem;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .copy-btn {
+        margin-left: 0;
     }
     
     .platform-badge,
     .download-badge {
         width: 100%;
-        max-width: 320px;
         justify-content: center;
     }
     
+    /* Demo stage - critical for mobile */
     .demo-stage {
-        max-width: 100%;
+        width: 100%;
+        margin: 24px 0;
+        aspect-ratio: 4/3;
+        border-radius: 12px;
     }
     
     .demo-window {
-        width: 200px;
+        width: 55%;
+        min-width: 160px;
+        max-width: 220px;
+        bottom: 10px;
     }
     
-    .floating-window {
-        transform: none;
-        width: 280px;
+    .demo-shortcut {
+        top: 20px;
+        padding: 10px 16px;
     }
     
-    .features-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
+    .demo-shortcut .shortcut-keys kbd {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    
+    .demo-shortcut .shortcut-label {
+        font-size: 12px;
+    }
+    
+    /* Feedback section */
+    .feedback {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 24px;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 30px 0;
     }
     
     .footer-content {
         flex-direction: column;
         text-align: center;
+        gap: 16px;
+    }
+    
+    .footer-brand {
+        font-size: 1rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+    }
+    
+    #install-code {
+        font-size: 0.75rem;
+    }
+    
+    .demo-window {
+        width: 50%;
+        min-width: 140px;
+    }
+    
+    .demo-shortcut .shortcut-keys kbd {
+        padding: 5px 8px;
+        font-size: 12px;
     }
 }
