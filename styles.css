@@ -477,7 +477,7 @@ body {
 
 .demo-shortcut {
     position: absolute;
-    top: 60px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -651,18 +651,17 @@ body {
     color: #888;
 }
 
-.github-link {
+.footer-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 16px;
+    gap: 6px;
     color: #888;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.github-link:hover {
+.footer-link:hover {
     color: #fff;
 }
 
