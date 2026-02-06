@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flying Lobster - Always-on-top chat for OpenClaw AI agents</title>
+    <meta name="description" content="A lightweight macOS desktop app that keeps your AI assistant one keystroke away. Floats above all windows, toggles with a global hotkey.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-centered">
+            <div class="hero-header">
+                <span class="logo">🦞</span>
+                <h1 class="hero-title">Flying Lobster</h1>
+            </div>
+            <p class="hero-description">
+                A lightweight desktop app that allows you to talk to your OpenClaw AI agent anywhere on your mac. It supports multiple gateways so you can switch between agents with a single keystroke.
+            </p>
+            
+            <!-- Demo Stage -->
+            <div class="demo-stage">
+                <img class="demo-bg" id="demo-bg" src="screenshots/bg1.png" alt="Desktop background">
+                <img class="demo-window hidden" id="demo-window" src="screenshots/rooty.png" alt="Flying Lobster window">
+                <div class="demo-shortcut" id="demo-shortcut">
+                    <div class="shortcut-keys"></div>
+                    <div class="shortcut-label"></div>
+                </div>
+            </div>
+            
+            <!-- Install Command -->
+            <div class="install-section">
+                <div class="install-row">
+                    <span class="platform-badge">macOS</span>
+                    <div class="install-command">
+                        <code id="install-code">npx flying-lobster install</code>
+                        <button id="copy-btn" class="copy-btn" onclick="copyInstallCommand()" title="Copy to clipboard">
+                            <span id="copy-text">Copy</span>
+                            <span id="copy-success" class="copy-success">Copied!</span>
+                        </button>
+                    </div>
+                    <a href="https://www.npmjs.com/package/flying-lobster" target="_blank" class="download-badge">
+                        <span class="download-icon">↓</span>
+                        <span id="download-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback" class="section feedback">
+        <div class="container feedback-centered">
+            <h2 class="section-title">Feedback</h2>
+            <p class="feedback-text">Found a bug or have a suggestion?</p>
+            <a href="https://tally.so/r/ZjaxLv" target="_blank" class="feedback-btn">Send Feedback</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">🦞</span>
+                    <span>Flying Lobster</span>
+                </div>
+                <p class="footer-text">
+                    Built by <a href="https://x.com/cnijh" target="_blank">@cnijh</a> and Rooty 🤖
+                </p>
+                <a href="https://opensource.org/licenses/MIT" target="_blank" class="footer-license">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 16v-4"></path>
+                        <path d="M12 8h.01"></path>
+                    </svg>
+                    MIT License
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
