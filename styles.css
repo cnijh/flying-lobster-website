@@ -683,10 +683,14 @@ body {
 .footer-brand {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #e5e5e5;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #999;
+}
+
+.footer-brand .logo {
+    font-size: 1rem;
 }
 
 .footer-text {
