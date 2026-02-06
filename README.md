@@ -101,7 +101,7 @@ Design inspired by the clean, modern aesthetic of [OpenClaw.ai](https://openclaw
 
 ## 📄 License
 
-Open source - feel free to use, modify, and share!
+Free to use!
 
 ---
 
