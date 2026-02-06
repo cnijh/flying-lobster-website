@@ -93,6 +93,20 @@ body {
     line-height: 1.7;
 }
 
+.openclaw-link {
+    font-weight: 700;
+    background: linear-gradient(135deg, #ff6b6b, #ffa500, #ffdd57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.openclaw-link:hover {
+    opacity: 0.8;
+}
+
 .install-section {
     margin-top: 32px;
 }
