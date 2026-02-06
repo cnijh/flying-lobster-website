@@ -666,9 +666,12 @@ body {
 }
 
 .footer-feedback {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     color: #888;
     font-size: 0.85rem;
-    text-decoration: none;
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
@@ -684,13 +687,13 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    color: #666;
+    color: #888;
 }
 
 .footer-brand .logo {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .footer-text {
