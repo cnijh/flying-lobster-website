@@ -651,6 +651,20 @@ body {
     color: #888;
 }
 
+.footer-github {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #999;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-github:hover {
+    color: #fff;
+}
+
 .footer-feedback {
     color: #fff;
     font-size: 0.85rem;
