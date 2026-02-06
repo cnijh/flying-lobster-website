@@ -3,6 +3,9 @@ function copyInstallCommand() {
     const command = 'npx flying-lobster install';
     const copyBtn = document.getElementById('copy-btn');
     
+    // Track click
+    if (window.goatcounter) goatcounter.count({ path: '/click/copy-install', event: true });
+    
     if (navigator.clipboard) {
         navigator.clipboard.writeText(command).then(() => {
             showCopyFeedback();
