@@ -671,8 +671,7 @@ body {
     gap: 4px;
     color: #888;
     font-size: 0.85rem;
-    text-decoration: underline !important;
-    text-underline-offset: 3px;
+    text-decoration: none;
     transition: color 0.3s ease;
 }
 
